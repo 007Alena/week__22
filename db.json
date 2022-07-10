@@ -1,30 +1,30 @@
 {"deals": [
     {"date": "Понедельник",
-    "Task-home": 2,
-    "Task-study": 3
+    "home": 2,
+    "study": 3
     },
     {"date": "Вторник",
-    "Task-home": 3,
-    "Task-study": 1
+    "home": 3,
+    "study": 1
     },
     {"date": "Среда",
-    "Task-home": 3,
-    "Task-study": 4
+    "home": 3,
+    "study": 4
     },
     {"date": "Четверг",
-    "Task-home": 3,
-    "Task-study": 1
+    "home": 3,
+    "study": 1
     },
     {"date": "Пятница",
-    "Task-home": 3,
-    "Task-study": 4
+    "home": 3,
+    "study": 4
     },
     {"date": "Суббота",
-    "Task-home": 3,
-    "Task-study": 2
+    "home": 3,
+    "study": 2
     },
     {"date": "Воскресенье",
-    "Task-home": 3,
-    "Task-study": 7
+    "home": 3,
+    "study": 7
     }
 ]}
