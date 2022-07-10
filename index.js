@@ -1,9 +1,6 @@
-$(document).on('ready', function () {
-    $(".center").slick();
-});
 
 const http = new XMLHttpRequest
-var url = "https://my-json-server.typicode.com/007Alena/week__22/deals";
+var url = "https://my-json-server.typicode.com/007Alena/week_22/db";
 http.open("GET", url,true);
 http.send();
 http.onreadystatechange = function(){
@@ -57,4 +54,8 @@ const myChart = new Chart(ctx, {
 );
     }
 }
+
+$(document).on('ready', function () {
+    $(".center").slick();
+});
 

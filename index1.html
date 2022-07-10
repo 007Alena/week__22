@@ -6,83 +6,107 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="./slick/slick.css">
     <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
-    <style>
-        .body__task {
-            width: 500px;
-            max-height: 100px;
-            color: blueviolet;
-            font-size: 40px;
-        }
-
-        html,
-        body {
-            margin: 0;
-            padding: 0;
-        }
-
-        * {
-            box-sizing: border-box;
-        }
-
-        .slider {
-            width: 30%;
-            margin: 100px auto;
-        }
-
-        .slick-slide {
-            margin: 0px 20px;
-        }
-
-        .slick-slide img {
-            width: 100%;
-        }
-
-        .slick-prev:before,
-        .slick-next:before {
-            color: black;
-        }
-
-
-        .slick-slide {
-            transition: all ease-in-out .3s;
-            opacity: .2;
-        }
-
-        .slick-active {
-            opacity: .5;
-        }
-
-        .slick-current {
-            opacity: 1;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="body__task">
+        <h2>Количество задач</h2>
         <canvas id="myChart" width="400" height="400"></canvas>
     </div>
 
-    <section class="center slider">
-        <div>
-            <img
-                src="https://cameralabs.org/media/cameralabs/images/Tanya/_II_October/14.10/23stunning-landscape-view-argentina.jpg">
-        </div>
-        <div>
-            <img
-                src="https://cameralabs.org/media/cameralabs/images/Tanya/_II_October/14.10/23stunning-landscape-view-argentina.jpg">
-        </div>
-        <div>
-            <img
-                src="https://cameralabs.org/media/cameralabs/images/Tanya/_II_October/14.10/23stunning-landscape-view-argentina.jpg">
-        </div>
-        <div>
-            <img
-                src="https://cameralabs.org/media/cameralabs/images/Tanya/_II_October/14.10/23stunning-landscape-view-argentina.jpg">
-        </div>
-        <div>
-            <img
-                src="https://cameralabs.org/media/cameralabs/images/Tanya/_II_October/14.10/23stunning-landscape-view-argentina.jpg">
+    <section class="slider">
+        <div class="descr">Описание задач:</div>
+        <div class="center">
+            <div class="day">
+                <div class="monday">Понедельник:</div>
+                <div class="home">Личные дела:
+                    <div class="deal">Купить продукты домой</div>
+                    <div class="deal">Забрать детей со школы</div>
+                    <div class="deal">Отнести вещи в хичестку</div>
+                    <div class="deal">Помочь детям сделать дз</div>
+                    <div class="deal">Отнести кошку к ветеренару</div>
+                    <div class="deal">Приготовить еду</div>
+                </div>
+                <div class="study">Задачи по учебе:
+                    <div class="deal">Прочитать лекции по мировой экономике</div>
+                    <div class="deal">Написать первую главу курсовой по менеджменту</div>
+                    <div class="deal">Решить задачи по высшей математике</div>
+                </div>
+            </div>
+            <div class="day">
+                <div class="tuesday">Вторник:</div>
+                <div class="home">Личные дела:
+                    <div class="deal">Забрать детей со школы</div>
+                    <div class="deal">Помочь детям сделать дз</div>
+                    <div class="deal">Сходить к стоматологу в 18:00</div>
+                    <div class="deal">Приготовить еду</div>
+                </div>
+                <div class="study">Задачи по учебе:
+                    <div class="deal">Выучить материал по блокчейну</div>
+                    <div class="deal">Отредактировать первую главу курсовой по менеджменту</div>
+                    <div class="deal">Решить дз по английскому</div>
+                </div>
+            </div>
+            <div class="day">
+                <div class="wednesday">Среда:</div>
+                <div class="home">Личные дела:
+                    <div class="deal">Отвезти детей в школу</div>
+                    <div class="deal">Купить продукты домой</div>
+                    <div class="deal">Забрать вещи с хичестки</div>
+                    <div class="deal">Приготовить еду</div>
+                </div>
+                <div class="study">Задачи по учебе:
+                    <div class="deal">Прочитать лекции по философии</div>
+                    <div class="deal">Начать писать 2 главу курсовой по менеджменту</div>
+                    <div class="deal">Написать доклад по истории</div>
+                </div>
+            </div>
+            <div class="day">
+                <div class="thursday">Четверг:</div>
+                <div class="home">Личные дела:
+                    <div class="deal">Отвезти детей в школу</div>
+                    <div class="deal">Сходить на маникюр</div>
+                    <div class="deal">Забрать детей со школы</div>
+                    <div class="deal">Приготовить еду</div>
+                </div>
+                <div class="study">Задачи по учебе
+                    <div class="deal">Прочитать лекции по логистике</div>
+                </div>
+            </div>
+            <div class="day">
+                <div class="friday">Пятница:</div>
+                <div class="home">Личные дела:
+                    <div class="deal">Сходить на маникюр</div>
+                    <div class="deal">Забрать детей со школы</div>
+                    <div class="deal">Приготовить еду</div>
+                </div>
+                <div class="study">Задачи по учебе
+                    <div class="deal">-</div>
+                </div>
+            </div>
+            <div class="day">
+                <div class="friday">Суббота:</div>
+                <div class="home">Личные дела:
+                    <div class="deal">Приготовить завтрак</div>
+                    <div class="deal">Сходить в spa</div>
+                    <div class="deal">Ужин в ресторане</div>
+                </div>
+                <div class="study">Задачи по учебе
+                    <div class="deal">-</div>
+                </div>
+            </div>
+            <div class="day">
+                <div class="sunday">Воскресение:</div>
+                <div class="home">Личные дела:
+                    <div class="deal">Приготовить завтрак</div>
+                    <div class="deal">Сходить в кино</div>
+                    <div class="deal">Ужин в ресторане</div>
+                </div>
+                <div class="study">Задачи по учебе
+                    <div class="deal">-</div>
+                </div>
+            </div>
         </div>
     </section>
 
