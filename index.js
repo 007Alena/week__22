@@ -2,16 +2,31 @@ $(document).on('ready', function () {
     $(".center").slick();
 });
 
-const xmlhttp = new XMLHttpRequest
-var url = ""
-const ctx = document.getElementById('myChart').getContext('2d');
+const http = new XMLHttpRequest
+var url = "https://my-json-server.typicode.com/007Alena/week__22/deals";
+http.open("GET", url,true);
+http.send();
+http.onreadystatechange = function(){
+    if (this.readyState ==4 && this.status == 200){
+        let data = JSON.parse(this.responseText);
+        let day = data.deals.map(function(elem){
+            return elem.date;
+        });
+        let home = data.deals.map(function(elem){
+            return elem.home;
+        });
+        let study = data.deals.map(function(elem){
+            return elem.study;
+        });
+
+        const ctx = document.getElementById('myChart').getContext('2d');
 const myChart = new Chart(ctx, {
     type: 'line',
     data: {
-        labels: ['Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье'],
+        labels: day,
         datasets: [{
             label: 'Задачи по учебе',
-            data: [5, 2, 6, 3, 4, 2, 6, 3, 4],
+            data: study,
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)'
             ],
@@ -21,7 +36,7 @@ const myChart = new Chart(ctx, {
             borderWidth: 3
         },{
             label: 'Задачи по дому',
-            data: [2, 4, 2, 2, 4, 2, 6, 3, 4],
+            data: home,
             backgroundColor: [
                 'rgba(54, 162, 235, 0.2)'
             ],
@@ -40,3 +55,6 @@ const myChart = new Chart(ctx, {
     }
 }
 );
+    }
+}
+
