@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Slick Playground</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+    <style>
+        .body__task {
+            width: 500px;
+            max-height: 100px;
+            color: blueviolet;
+            font-size: 40px;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .slider {
+            width: 30%;
+            margin: 100px auto;
+        }
+
+        .slick-slide {
+            margin: 0px 20px;
+        }
+
+        .slick-slide img {
+            width: 100%;
+        }
+
+        .slick-prev:before,
+        .slick-next:before {
+            color: black;
+        }
+
+
+        .slick-slide {
+            transition: all ease-in-out .3s;
+            opacity: .2;
+        }
+
+        .slick-active {
+            opacity: .5;
+        }
+
+        .slick-current {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="body__task">
+        <canvas id="myChart" width="400" height="400"></canvas>
+    </div>
+
+    <section class="center slider">
+        <div>
+            <img
+                src="https://cameralabs.org/media/cameralabs/images/Tanya/_II_October/14.10/23stunning-landscape-view-argentina.jpg">
+        </div>
+        <div>
+            <img
+                src="https://cameralabs.org/media/cameralabs/images/Tanya/_II_October/14.10/23stunning-landscape-view-argentina.jpg">
+        </div>
+        <div>
+            <img
+                src="https://cameralabs.org/media/cameralabs/images/Tanya/_II_October/14.10/23stunning-landscape-view-argentina.jpg">
+        </div>
+        <div>
+            <img
+                src="https://cameralabs.org/media/cameralabs/images/Tanya/_II_October/14.10/23stunning-landscape-view-argentina.jpg">
+        </div>
+        <div>
+            <img
+                src="https://cameralabs.org/media/cameralabs/images/Tanya/_II_October/14.10/23stunning-landscape-view-argentina.jpg">
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="./slick/slick.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.8.0/dist/chart.min.js"></script>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
