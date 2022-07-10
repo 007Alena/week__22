@@ -1,30 +1,30 @@
 {"deals": [
     {"date": "Понедельник",
-    "home": 2,
+    "home": 6,
     "study": 3
     },
     {"date": "Вторник",
-    "home": 3,
-    "study": 1
+    "home": 4,
+    "study": 3
     },
     {"date": "Среда",
-    "home": 3,
-    "study": 4
+    "home": 4,
+    "study": 3
     },
     {"date": "Четверг",
-    "home": 3,
+    "home": 4,
     "study": 1
     },
     {"date": "Пятница",
     "home": 3,
-    "study": 4
+    "study": 0
     },
     {"date": "Суббота",
     "home": 3,
-    "study": 2
+    "study": 0
     },
     {"date": "Воскресенье",
     "home": 3,
-    "study": 7
+    "study": 0
     }
 ]}

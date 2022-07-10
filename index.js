@@ -1,6 +1,6 @@
 
 const http = new XMLHttpRequest
-var url = "https://my-json-server.typicode.com/007Alena/week_22/db";
+var url = "https://my-json-server.typicode.com/007Alena/week__22/db";
 http.open("GET", url,true);
 http.send();
 http.onreadystatechange = function(){
@@ -28,7 +28,7 @@ const myChart = new Chart(ctx, {
                 'rgba(255, 99, 132, 0.2)'
             ],
             borderColor: [
-                'rgba(255, 99, 132, 1)'
+                'rgba(255, 99, 132, 0.2)'
             ],
             borderWidth: 3
         },{
